@@ -1,7 +1,9 @@
-
-puts "数字を入力"
-money = gets.to_i
-exchange = 120 - money
-
-puts "おつりは" + exchange.to_s
-
+(1..150).each{|n|
+	if n % 3 == 0
+		puts n + "!"
+	elsif n.include?("3")
+		puts n + "!"
+	else
+		puts("%d ", n)
+	end
+}
